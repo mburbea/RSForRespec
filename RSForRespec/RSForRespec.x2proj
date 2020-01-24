@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>c1a68f75-e9e7-403a-9760-e421cd5dbd98</Guid>
+    <Name>RS For Respec</Name>
+    <Description>This is a simple mod that adds additional controller support to I'm the commander here by dare. When the respec button is present in the new ability selection screen you can now press in the right stick to respec, requires the highlander and I'm the commander here.
+
+
+tags=wotc, highlander, controller, imthecommanderhere</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>RSForRespec</AssemblyName>
+    <RootNamespace>RSForRespec</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\RSForRespec\" />
+    <Folder Include="Src\RSForRespec\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\RSForRespec.int" />
+    <Content Include="Src\RSForRespec\Classes\UIScreenListener_RS4R.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\RSForRespec\Classes\X2DownloadableContentInfo_RSForRespec.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
